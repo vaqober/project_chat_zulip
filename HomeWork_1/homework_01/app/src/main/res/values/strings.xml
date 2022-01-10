@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">homework_01</string>
+    <string name="main_activity_text">Нажмите кнопку для открытия второй Activity</string>
+    <string name="second_activity_text">Activity 2. Нажмите кнопку для старта сервиса</string>
+</resources>

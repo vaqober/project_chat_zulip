@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.fintech.homework_4.fragments.TopicFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_light"
+        android:padding="@dimen/element_margin"
+        custom:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/topic_draft"
+            android:textColor="@color/white_gray" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        custom:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        custom:layout_constraintBottom_toTopOf="@id/input_box" />
+
+    <LinearLayout
+        android:id="@+id/input_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_dark"
+        android:orientation="horizontal"
+        android:padding="@dimen/element_margin"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/element_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:layout_weight="@integer/material_motion_duration_long_1"
+            android:autofillHints=""
+            android:background="@drawable/bg_custom_input_view"
+            android:hint="@string/input_draft"
+            android:inputType="text"
+            android:textColor="@color/white_gray"
+            android:textColorHint="@color/white_gray" />
+
+        <ImageButton
+            android:id="@+id/send_image"
+            android:layout_width="@dimen/image_roud_size"
+            android:layout_height="@dimen/image_roud_size"
+            android:layout_marginEnd="@dimen/element_margin"
+            android:background="@drawable/ic_vector_plus"
+            android:contentDescription="@string/input_draft"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintEnd_toEndOf="@id/chat"
+            custom:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/element_margin"
+    android:layout_marginBottom="@dimen/element_margin"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="@dimen/image_big_roud_size"
+        android:layout_height="@dimen/image_big_roud_size"
+        android:background="@drawable/bg_custom_image_view"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/element_margin"
+        android:text="@string/title_draft"
+        android:textColor="@color/white_light"
+        app:layout_constraintLeft_toRightOf="@id/userImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:text="@string/mail_draft"
+        android:textColor="@color/gray"
+        app:layout_constraintLeft_toRightOf="@id/userImage"
+        app:layout_constraintTop_toBottomOf="@id/userName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

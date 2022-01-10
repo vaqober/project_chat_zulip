@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="element_margin">8dp</dimen>
+    <dimen name="element_small_margin">5dp</dimen>
+    <dimen name="medium_margin">20dp</dimen>
+    <dimen name="image_roud_size">40dp</dimen>
+    <dimen name="image_big_roud_size">60dp</dimen>
+    <dimen name="image_search_size">40dp</dimen>
+    <dimen name="text_frame_max_size">240dp</dimen>
+    <dimen name="box_frame_max_size">300dp</dimen>
+    <dimen name="dialog_frame_max_size">600dp</dimen>
+    <dimen name="corners_item_radius">20dp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="large_text_size">32sp</dimen>
+
+</resources>

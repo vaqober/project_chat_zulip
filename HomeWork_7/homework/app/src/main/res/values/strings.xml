@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Homework_7</string>
+    <string name="smile_draft">😃</string>
+    <string name="count_draft">1</string>
+    <string name="plus_draft">➕</string>
+    <string name="title_draft">Darrell Steward</string>
+    <string name="mail_draft">darrel@company.com</string>
+    <string name="status_draft">In a meeting</string>
+    <string name="online_draft">online</string>
+    <string name="logout_draft">Log out</string>
+    <string name="stream_draft">#general</string>
+    <string name="topic_item_draft">Testing</string>
+    <string name="message_draft">Привет! lorem ipsum test message dalshe zabil</string>
+    <string name="date_draft">1 Фев</string>
+    <string name="input_draft">Написать…</string>
+    <string name="search_draft">Search…</string>
+    <string name="users_draft">Users…</string>
+    <string name="subsribed_draft">Subsribed</string>
+    <string name="all_streams_draft">All streams</string>
+    <string name="topic_draft">Topic: #testing</string>
+    <string name="menu_channels">Channels</string>
+    <string name="menu_people">People</string>
+    <string name="menu_profile">Profile</string>
+</resources>

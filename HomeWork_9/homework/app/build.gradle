@@ -1,0 +1,100 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlinx-serialization'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        applicationId "com.fintech.homework_9"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "androidx.core:core-ktx:$androidXVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization"
+
+    //Fragments
+    implementation "androidx.fragment:fragment:$fragmentVersion"
+    implementation "androidx.fragment:fragment-ktx:$fragmentXVersion"
+    implementation "androidx.appcompat:appcompat:${appCompatVersion}"
+
+    //ElmSlie
+    implementation "com.github.vivid-money.elmslie:elmslie-core:$elmslie"
+    implementation "com.github.vivid-money.elmslie:elmslie-android:$elmslie"
+
+    //RxJava
+    implementation "io.reactivex.rxjava3:rxjava:$rxJava"
+    implementation "io.reactivex.rxjava3:rxandroid:$rxAndroid"
+    implementation "io.reactivex.rxjava3:rxkotlin:$rxKotlin"
+
+    //Room
+    implementation "androidx.room:room-runtime:$roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$roomVersion"
+    // To use Kotlin annotation processing tool (kapt)
+    kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-rxjava3:$roomVersion"
+
+    //Dagger
+    implementation "com.google.dagger:dagger:$dagger"
+    kapt "com.google.dagger:dagger-compiler:$dagger"
+
+    //Web
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:$retrofitKotlinSerialization"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$retrofitRx"
+    implementation "com.squareup.okhttp3:okhttp:$okHTTP"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHTTP"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide"
+    implementation "com.github.bumptech.glide:okhttp3-integration:$glide"
+    kapt "com.github.bumptech.glide:compiler:$glide"
+
+
+    //ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$viewModel"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$savedState"
+
+    //LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$liveData"
+
+    //Android
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "androidx.legacy:legacy-support-v4:$legacySupport"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationFragment"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation"
+    testImplementation "junit:junit:$junitVersion"
+}

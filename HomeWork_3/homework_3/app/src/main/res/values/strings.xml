@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Homework_3</string>
+    <string name="smile_draft">😃</string>
+    <string name="count_draft">1</string>
+    <string name="plus_draft">➕</string>
+    <string name="title_draft">Darrell Steward</string>
+    <string name="message_draft">Привет! lorem ipsum test message dalshe zabil</string>
+    <string name="date_draft">1 Фев</string>
+</resources>
